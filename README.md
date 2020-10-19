@@ -1,0 +1,14 @@
+
+
+
+Build Docker-Image
+==================
+
+```
+$ docker build -t frittenburger/docker .
+``` 
+Run Image
+=========
+```
+docker run -p 3000:3000 -d --rm frittenburger/simple-file-share-server
+```
