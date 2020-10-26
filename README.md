@@ -5,7 +5,7 @@ Build Docker-Image
 ==================
 
 ```
-$ docker build -t frittenburger/docker .
+$ docker build -t frittenburger/simple-file-share-server .
 ``` 
 Run Image
 =========
