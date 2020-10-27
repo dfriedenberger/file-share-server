@@ -37,7 +37,7 @@ $( document ).ready(function() {
             for(let i = 0;i < data.document.payload.length;i++)
             {
                 let payload = data.document.payload[i];
-                html = html.replace(payload.file,'<a href="/show/'+payload.file+'">'+payload.file+'</a>');
+                html = html.replace('"'+payload.file,'"<a href="/show/'+payload.file+'">'+payload.file+'</a>');
             }
         }
         console.log("data.document.prior",data.document.prior);
@@ -59,18 +59,6 @@ $( document ).ready(function() {
             window.location = href;
             location.reload();
         });
-    //    explode(data.document.keys[i],80)
-        
-                //var ext = pl.file.split('.').pop().toLowerCase();
-          
-                //'<img width="200px" src="/files/'+pl.file+'">';
-               // file += ' <i class="fa fa-lock" aria-hidden="true"></i>';
-              
-
-        
-       //     var link = "/show.html#"+data.document.prior.id.replace(/did:dad:/, 'dad_')+".json";
-    //   body.append('<tr><td>Prior-Id</td><td><a id="prior" href="'+link+'">'+data.document.prior.id+'</a></td></tr>');
-         
 
         //Show Signature
         $("#signature").text(data.signature);
